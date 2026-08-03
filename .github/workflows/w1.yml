@@ -21,3 +21,29 @@ jobs: #a collections of jobs
 
 
 
+
+
+# -name: setup node
+# uses: actions/setup-node@v4
+#  with: #pass input to and action
+#  run: npm install # run a shell command
+
+#  -name: run tests
+#   run : npm test
+
+name: full pipeline
+
+on: push
+jobs:
+  test:
+    runs-on:ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: npm install
+    - run: npm test
+  build:
+    runs-on: ubuntu-latest
+    needs: test  #needs: defines dependency between jobs
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm run build 
