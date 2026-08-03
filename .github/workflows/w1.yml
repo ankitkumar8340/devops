@@ -1,0 +1,23 @@
+name: node CLI
+
+#name: workflow
+
+on: #trigger
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs: #a collections of jobs
+  test:
+    run-on: ubuntu-latest  #
+
+
+
+
+
+
+
+
+
+
+
