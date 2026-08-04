@@ -1,0 +1,9 @@
+docker pull ubuntu  --> install ubuntu image  //refrence can be taken from docker hub
+
+docker image --> to check how many image are present there
+
+docker run ubuntu --> it will create a container and then run it
+
+
+
+
