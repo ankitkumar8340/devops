@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  backend:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      MONGO_URI: "mongodb://localhost:27017/myDB"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+    restart: always
+    ports:
+      - "27017:27017"
+volumes:
+  mongo-data:
+
+#compose is for running multiple servers together, such as backend + database + frontend. Docker's compose says that it will let us define reusable named volume, and the networking parts says that compose handles  
+
+
+
+
+
+
