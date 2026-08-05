@@ -1,4 +1,4 @@
-kubernative's jobs:-
+kubernates's jobs:-
 
 1. Container deployment
 2. Scaling
@@ -17,6 +17,41 @@ One container cannot handle this Traffic
 
 options: 
 1. Start more containers
+2. Distribute request
+3. Restart crashed containers
+4. Replace failed servers
+
+
+What does k8s solves?
+
+let suppose we have 3 containers
+
+docker says - container B has stopped
+k8s - creates a new container.
+
+pods are ephermeral which means it can die very easily
+
+ingress: it is a component that manages...///
+
+kubernates Architechure
+1. Control plane: This is the brain which decides everything
+2. Worker node: This actually runs the application.
+3. Cluster: It is a group of computers working togther
+4. Node: It is simply a machine it can be physical servers, virtual machines, EC@ instance, Azure VM, GCP VM. 
+5. Pod: It is the smallest deployement units
+6. Deployment: Pods are temporary and if a pod dies, k8s creates another though a deployment. Deployment manages pods
+7. ReplicaSet: Suppose we want 3 pods and pod 2 dies. Replicaset creates pod 4 to balance it out.
+8. Service: Static/ Permanent IP 
+    Types of service:-
+        1. ClusterIp:Internal Coummunication only
+        2. NodePort Accible using PORT 300001
+        3. LoadBalancer: Cloud Providers creates a public LoadBalancer
+        4. Ingress: Instead of multiple load balancers, ingress routes the Traffic
+        5. CongigMap: Stores non-sensitive configuration
+        6. Secret: Stores sensitive data.
+        
+
+
 
 
 
