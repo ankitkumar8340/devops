@@ -1,0 +1,30 @@
+kubernative's jobs:-
+
+1. Container deployment
+2. Scaling
+3. Load balancing
+4. Selft healing
+5. Roll updates
+6. Service discovery
+7. Storage management
+
+
+Traffic:  Morning: 500 users
+          Afternoon: 5,000 users
+          Night: 50,000 users
+
+One container cannot handle this Traffic
+
+options: 
+1. Start more containers
+
+
+
+
+
+
+
+
+
+
+
